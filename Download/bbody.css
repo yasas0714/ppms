@@ -1,0 +1,165 @@
+
+.content3{
+
+	height:1000px;
+	width: 100%;
+}
+
+.filterr1{
+
+	position: relative;
+ 	top: -55%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	z-index: 1;
+ 	width: 100%;
+ 	padding: 20px;
+ 	background-color:rgba(255, 255, 255, 0.08);
+ 	height: 500px;
+}
+
+.fa{
+	font-size: 35px; 
+}
+
+.fb{
+	font-size: 15px;
+}
+
+.ra{
+	width:250px;
+
+}
+
+.filterr2{
+
+	position: relative;
+ 	top: 62%;
+ 	left: 50%;
+ 	transform: translate(-30%, -50%);
+ 	z-index: 2;
+ 	width: 100%;
+ 	padding: 20px;
+ 	height: 500px;
+ 	color: white;
+
+}
+
+.font	{
+	font-style:oblique; 
+	font-weight:bold;
+	color:#fff;
+	text-shadow: 4px 4px #0b0b0b;
+}
+
+.sub	{
+	font-size:18px;
+	background-color:#d4e400;
+	border:1px;
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 8px;
+
+}
+
+.sub:hover{
+	background-color: #a1ad0c;
+
+}
+
+.downpp{
+	position: relative;
+	top: -90%;
+	transform: translate(0%, -50%);
+	height: 80px;
+	font-size:54px;
+	text-align:center;
+	width: 100%;
+	font-style:oblique; 
+	font-weight:bold;
+	color:#d4e400;
+	text-shadow: 4px 4px #0b0b0b;
+}
+
+
+/*downlist.php*/
+
+.llist{
+	position: relative;
+	top: -78%;
+	left: 5%;
+	color: white;
+	overflow: auto;
+	height: 50%;
+	width: 90%;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	.filterr1{
+		left:60%;
+		width: 120%;
+		transform: translate(-67%,-50%);
+
+	}
+
+	.filterr2{
+		left: 48%;
+		width: 50%;
+	}
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+
+	.filterr2{
+		left: 27%;
+	}
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+	.filterr1{
+
+		height: 505px;
+	}
+
+	.fa{
+		font-size: 25px;
+	}
+
+	.fb{
+		font-size: 12px;
+	}
+
+	.ra{
+		width: 100px;
+	}
+
+	.filterr2{
+		left: 29%;
+		top: 55%;
+	}
+
+	.downpp{
+		font-size: 40px;
+	}
+
+	.ta{
+		border-collapse:separate; 
+                border-spacing:0 15px;
+	}
+
+}

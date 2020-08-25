@@ -1,0 +1,24 @@
+body{ }
+h1{
+	text-align:center;color: red
+}
+.a{
+	list-style-type:square;
+}
+.b{
+	background-image:url(images/2.png);
+	height:300px;
+	background-repeat: no-repeat;
+}
+.c{
+	background-image:url(images/9.jpg);
+	height:320px;
+	background-size: cover;
+}
+.d{
+
+	position: absolute;
+	margin-top: 10%;
+	margin-bottom: 5%;
+
+}

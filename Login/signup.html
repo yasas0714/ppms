@@ -1,0 +1,194 @@
+<HTML>
+    <HEAD>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="navi.css">
+        <link rel="stylesheet" type="text/css" href="signup.css">
+
+        <script type="text/javascript">
+    
+    function myFunction(){
+        alert("Please login first!");
+    }
+
+ </script>
+
+    </HEAD>
+    <BODY>
+        <div class="top">
+    <table>
+        <tr>
+            <td>
+                <img src="images\logofinal.jpg" alt="Logo" style="width:100px;height:80px;">
+            </td>
+            <td>
+                <h3 style="font-family: cursive;color: #800080">UPMS</h3>
+                <h6 style="font-family: cursive;color: #800080">[University Past Paper Management System]</h6>
+            </td>
+        </tr>
+    </table>
+        </div>
+    
+    <div class="content2">
+     <nav class="navbar sticky-top navbar-expand-sm bg-light navbar-light">
+
+
+  <!-- Links -->
+  <ul class="nav navbar-nav">
+ 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ab" aria-controls="ab" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+    <div class="collapse navbar-collapse" id="ab">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html"><font color="#708090">Home</font></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="myFunction()"><font color="#708090">Download</font></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="myFunction()"><font color="#708090">Upload</font></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../About/aboutus1.html"><font color="#708090">About us</font></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Contactus/contact1.html"><font color="#708090">Contact us</font></a>
+            </li>
+    </div>
+ </ul> 
+
+ <ul class="navbar-nav ml-auto">
+        <li class="nav-item activenav">
+            <a class="nav-link" href="Login.php"><font color="#708090">Login</font></a>
+        </li>
+ </ul>
+    </nav>
+    <!--mobile navbar-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">  </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">  </script>
+
+
+    <div class="b">
+
+       <div class="loginbox">
+            <img src="images/logo.png" class="avatar">
+            <h1>Login Here</h1>
+                <br>
+                <form action="signup.php" method="POST" onsubmit="return validation()">
+                    <p>First Name</p>
+                    <input type="text" name="fname" id="faname" placeholder="Enter Your First Name">
+                    <span id="namef" style="color:red;"></span>
+                    
+                    <p>Last Name</p>
+                    <input type="text" name="lname" id="laname" placeholder="Enter Your Last Name">
+                    <span id="namel" style="color:red;"></span>
+                    <p>Email</p>
+                   <input type="text" name="email" id="emaila"  placeholder="Enter Your Email">
+                    <span id="emali" style="color:red;"></span>
+                    <p>Password</p>
+                    <input type="password" name="pass" id="pw" placeholder="Enter Password" >
+                      <span id="paw" style="color:red;"></span>
+                    <p>Confirm Password</p>
+                    <input type="password" name="cpass" id="cpw" placeholder="Enter Password" >
+                      <span id="cpaw" style="color:red;"></span>
+                    <br>
+                    <br>
+                    <input type="submit" name="submit" value="Submit" >
+                    <br>
+                    <br>
+                    <a href="login.php">Do you have an account?</a>
+                </form>
+        </div>
+                    <script >
+                function validation()
+                    {
+                        var fname = document.getElementById('faname').value;
+                        var lname = document.getElementById('laname').value;
+                        var email = document.getElementById('emaila').value;
+                        var pass = document.getElementById('pw').value;
+                        var cpass = document.getElementById('cpw').value;
+
+                        
+                        if(fname==""){
+                            document.getElementById('namef').innerHTML="*please fill the  First name ";
+                            return false;
+                            }
+                        
+                            if((fname.length<3)||(fname.length>20)){
+                                document.getElementById('namef').innerHTML="*please fill the  First name between 3 and 20";
+                                return false;
+                                }
+                            if(!isNaN(fname)){
+                            document.getElementById('namef').innerHTML="*please enter character";
+                                return false;
+                            
+                            }   
+                            
+
+                        
+                        if(lname==""){
+                            document.getElementById('namel').innerHTML="*please fill the Last name";
+                            return false;
+                            }
+                            
+                            if((lname.length<3)||(lname.length>20)){
+                                document.getElementById('namel').innerHTML="*please fill the  Last name between 3 and 20";
+                                return false;
+                                }
+                                
+                            if(!isNaN(lname)){
+                            document.getElementById('namel').innerHTML="*please enter character";
+                                return false;
+                            }   
+                            
+                            
+                                
+                        if(email==""){
+                            document.getElementById('emali').innerHTML="*plesae fill the Email address";
+                            return false;
+                            }
+                            
+                            if(email.indexOf('@')<=0){
+                            document.getElementById('emali').innerHTML="*plesae fill the Email address in proper format @";
+                            return false;
+                            }
+                            
+                            
+                            if((email.charAt(email.length-4)!='.')&&(email.charAt(email.length-3)!='.')){
+                            document.getElementById('emali').innerHTML="*plesae fill the Email address in proper format .";
+                            return false;
+                            }
+                            
+                        if(pass==""){
+                            document.getElementById('paw').innerHTML="*please fill the Password";
+                            return false;
+                            }
+                        if((pass.length<5)||(pass.length>20)){
+                                document.getElementById('paw').innerHTML="*please fill the  password between 5 and 20";
+                                return false;
+                                }
+                            
+                            
+                            
+                        if(cpass==""){
+                            document.getElementById('cpaw').innerHTML="*plese fill the confirm password";
+                            return false;
+                            }
+                        
+                    if(pass!=cpass){
+                        document.getElementById('cpaw').innerHTML="*passwords are not matching";
+                            return false;
+                        }
+                    
+                    }
+                        
+            </script>
+    </div>
+    </div>
+    </BODY>
+</HTML>
